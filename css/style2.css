@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Cormorant+Garamond:wght@300&family=Karma:wght@300&family=Syne+Mono&display=swap');
+/*ОСНОВА*/
+html,body{
+  background-color: black;
+  height: 100%;
+}
+h2{
+  font-family: 'Abel', sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+.container{
+  height: 100%;
+}
+.black-background{
+  background-color: black;
+  color: white;
+ 
+}
+.yellow-background{
+  background-color: goldenrod;
+  color: black;
+}
+.wrapper
+{
+    max-width: 1200 px;
+    padding: 2rem 2rem 2rem;
+    margin-bottom: 30px;
+}
+.horizon{
+  display: flex;
+  justify-content: space-around;
+}
+.right{
+  float: right; 
+ }
+
+ .text{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+ }
+ 
+*
+{
+margin: 0;
+}
+/*ШАПКА*/
+header
+{
+  background-color:black;
+}
+.top-menu-spacing {
+  padding: 20px;
+}
+/*
+.top-menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}*/
+.navbar-logo {display: inline-block;}
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+.menu-main li {display: inline-block;}
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  line-height: 80px;
+  padding-left: 20px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: 'Abel', sans-serif;
+  color:#ebe8e8;
+  transition:.3s linear;
+}
+.menu-main a:before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: goldenrod;
+  position: absolute;
+  left: 50%;
+  transform: rotate(45deg) translateX(1px);
+  opacity: 0;
+  transition: .3s linear;
+}
+.menu-main a:hover:before {opacity: 1;}
+
+/*Адаптация экрана*/
+@media (max-width: 660px) {
+.menu-main {
+  float: none;
+  padding-top: 20px;
+}
+.top-menu {
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+.menu-main a {padding: 0 10px;}
+.menu-main a:before {transform: rotate(45deg) translateX(-6px);}
+}
+@media (max-width: 600px) {
+.menu-main li {display: block;}
+}
+
+/*ГЛАВНЫЙ ЭКРАН*/
+main
+{
+  background-image: url(../img/быстро.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1200 px;
+  height: 500px;
+}
+.main-header{
+  padding-left: 10%;
+  padding-top: 13%;
+}
+.main-header h1{
+  font-family: 'Syne Mono', monospace;
+  font-weight: 600;
+  font-size: 90px;
+  color:goldenrod
+}
+.main-header p{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+/*БЛОК ОБО МНЕ*/
+.about-me{
+  height: 256px;
+}
+
+/*БЛОК МОИ КОМПЕТЕНЦИИ*/
+.my-skills{
+  height: 256px;
+}
+.my-skills >figure{
+  padding-right: 10px;
+} 
+.my-skills>figure>p{
+  text-align: center;
+}
+.my-skills>h2{
+  text-align: center;
+  padding-bottom: 30px;
+}
+/*БЛОК УСЛУГИ*/
+.my-services{
+  height: 300px; 
+ }
+ .my-services h2{
+   text-align: center;
+ }
+ .my-services li{
+   margin-bottom: 10px;
+ } 
+
+ /* БЛОК ИСТОРИЯ*/
+ .history{
+   height: 256px;
+ }
+ .history h2{
+   text-align: center;
+ }
+ .history-button{
+  padding-top: 25px;
+  text-align: center;
+ }
+ .history input{
+  font-family: 'Abel', sans-serif;
+  font-size: 15px; 
+  background-color: goldenrod;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+ }
+ /*ПОДВАЛ*/
+ .footerdown
+{
+    width: 100%;
+    height: 30px;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+}
+.footerheight{
+  height: 100px;
+}
+.footer-line{
+  display: flex;
+  justify-content: space-between;
+}
+footer div{
+  font-family: 'Abel', sans-serif;
+  font-size: 15px;
+  font-weight: 600; 
+}
+
+.gradient-button {
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  padding: 20px 30px;
+  margin: 10px 20px;
+  font-family: 'Abel', sans-serif;
+  font-size: 15px; 
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #000000 0%, rgb(207, 174, 90) 51%, goldenrod 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+}
+.gradient-button:hover {
+  background-position: right center;
+}
