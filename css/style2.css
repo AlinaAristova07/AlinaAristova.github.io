@@ -16,7 +16,6 @@ h2{
 .black-background{
   background-color: black;
   color: white;
- 
 }
 .yellow-background{
   background-color: goldenrod;
@@ -44,6 +43,7 @@ h2{
 *
 {
 margin: 0;
+padding: 0;
 }
 /*ШАПКА*/
 header
@@ -59,12 +59,15 @@ header
   display: table;
   clear: both;
 }*/
-.navbar-logo {display: inline-block;}
+.navbar-logo {display: inline-block}
+.flex-сonteiner{
+  display: flex;
+  justify-content: space-between;
+  }
 .menu-main {
   list-style: none;
   margin: 0;
-  padding: 0;
-  float: right;
+  padding:0;
 }
 .menu-main li {display: inline-block;}
 .menu-main a {
@@ -164,7 +167,13 @@ main
  .my-services li{
    margin-bottom: 10px;
  } 
-
+ .table-services {
+  width: 100%;
+  table-layout: fixed;
+}
+.table-services td {
+  width: 100%;
+}
  /* БЛОК ИСТОРИЯ*/
  .history{
    height: 256px;
