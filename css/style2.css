@@ -21,6 +21,10 @@ h2{
   background-color: goldenrod;
   color: black;
 }
+.white-background{
+  background-color:#BF7E04;
+  color: rgb(54, 53, 53);
+}
 .wrapper
 {
     max-width: 1200 px;
@@ -193,6 +197,59 @@ main
   padding-top: 10px;
   padding-bottom: 10px;
  }
+
+ /*ФОРМА*/
+.container-form{
+    background-color: #f2f2f2;
+    padding: 20px;
+    padding-left: 35%;
+}
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+input[type=text],textarea, input[type=email], input [type=date] input [type=color], input [type=range] {
+  width: 25%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+.list-form input[type=submit] {
+  font-family: 'Abel', sans-serif;
+  font-size: 15px; 
+  background-color: goldenrod;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100px;
+}
+.form-buttom{
+ padding-left: 36%; 
+}
+input[type=submit]:hover {
+  background-color:black;
+  color:goldenrod ;
+}
+ .list-form{
+   height: 400px;
+ }
+
  /*ПОДВАЛ*/
  .footerdown
 {
