@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <form action="" method="get">
+    <!--вопросы-->
+    <input type="submit" value="отправить вопрос">
+    <input type="reset" value="очистить">
+    <br>
+    <div>
+        <div>Как вам удобно получить ответ?</div>
+        <label for="c_mail">
+            <input type="radio" name="com_tion" id="c_mail"> на почте
+        </label>
+        <br>
+        <label for="c_tel">
+            <input type="radio" name="com_tion" id="c_tel"> по телефону
+        </label>
+        <br>
+        <label for="c_none">
+            <input type="radio" name="com_tion" id="c_none"> не нужно отвечать
+        </label>
+        <br>
+    </div> 
+    <br>
+    <div>
+        <div>И еще один вопрос?</div>
+        <label for="chb1">
+            <input type="checkbox" name="chb1" id="chb1">может так
+        </label>
+        <br>
+        <label for="chb2">
+            <input type="checkbox" name="chb2" id="chb2">или не так
+        </label>
+        <br>
+    </div>
+    <br>
+    <div>
+        <label for="theme">
+            Укажите тему вопроса
+        </label>
+        <br>
+        <select name="theme" id="theme">
+            <option value="work">работа</option>
+            <option value="home">дом</option>
+            <option value="personal">личное</option>            
+        </select>
+    </div>  
+    <br>
+    <div>
+        <label for="example">Пример текстового поля</label><br>
+        <input type="text" name="example" id="example" size="30" pattern="[A-Z]+"required>   
+    </div>
+    <div class = "email-input">
+        <label for="email">адрес почты</label>
+        <input type="email" name="email" id="email">
+    </div>
+    <div>
+        <label for="tel">номер телефона</label>
+        <input type="tel" name="tel" id="tel">
+    </div>
+    <div>Ваш вопрос?</div>
+    <div>
+        <textarea cols="30" ></textarea>
+    </div>
+ </form>   
+</body>
+</html>
